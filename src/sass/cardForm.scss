@@ -1,0 +1,60 @@
+
+.CardForm{
+    width: 90%;
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    color:$Very-dark-violet;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+    input{
+        padding: 12px;
+        border-radius: .375rem;
+        border-width: 1px;
+        border-color: $White;
+        min-width: 20px;
+        width: 100%;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        &::placeholder{
+            color:$Light-grayish-violet;
+        }
+        &::invalid{
+            color:$Red;
+        }
+
+    }
+    .GoupForm{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap:16px;
+        .date{
+            margin:0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap:8px;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .ButtonConfirm{
+        padding: 1rem;
+        border-radius: .375rem;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color:$White;
+        background-color: $Very-dark-violet ;
+    }
+}

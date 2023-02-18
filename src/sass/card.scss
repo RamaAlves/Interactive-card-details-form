@@ -1,0 +1,74 @@
+.ContainerCard{
+    width: 375px;
+    height: 270px;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    font-family: 'Space Grotesk', sans-serif;
+    .FrontCard{
+        position: absolute;
+        top: 43%;
+        left: 5%;
+        background-image: url('../assets/images/bg-card-front.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 75%;
+        height: 58%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:14%;
+        padding:5%;
+        color:$White;
+        font-family: 'Space Grotesk';
+        svg{
+            transform: scale(.6) translateX(-33%) translateY(-33%);
+            margin: 0;
+            // margin-bottom: 8% ;
+            padding:0 ;
+        }
+        .numberCard{
+            letter-spacing: 2.1px;
+        }
+        .flex-name-date-card{
+            font-family: 'Space Grotesk';
+            display: flex;
+            font-size: 9px;
+            letter-spacing: .1rem;
+            width: 100%;
+            justify-content: space-between;
+            .date-card{
+                display: flex;
+            }
+        }
+    }
+    .BackCard{
+        position: absolute;
+        top:11%;
+        left: 20%;
+        background-image: url('../assets/images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 75%;
+        height:58%;
+        .cvc{
+            
+            position: relative;
+            height: 100%;
+            p{
+                position: absolute;
+                top:45%;
+                left:80%;
+                font-size: 9px;
+                color: $White;
+                letter-spacing: .08rem;
+            }
+
+        }
+
+
+    }
+}

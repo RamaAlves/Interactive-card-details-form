@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.ContainerCard {
+  width: 375px;
+  height: 270px;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-family: "Space Grotesk", sans-serif;
+}
+.ContainerCard .FrontCard {
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  background-image: url("../assets/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 58%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14%;
+  padding: 5%;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Space Grotesk";
+}
+.ContainerCard .FrontCard svg {
+  transform: scale(0.6) translateX(-33%) translateY(-33%);
+  margin: 0;
+  padding: 0;
+}
+.ContainerCard .FrontCard .numberCard {
+  letter-spacing: 2.1px;
+}
+.ContainerCard .FrontCard .flex-name-date-card {
+  font-family: "Space Grotesk";
+  display: flex;
+  font-size: 9px;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.ContainerCard .FrontCard .flex-name-date-card .date-card {
+  display: flex;
+}
+.ContainerCard .BackCard {
+  position: absolute;
+  top: 11%;
+  left: 20%;
+  background-image: url("../assets/images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 58%;
+}
+.ContainerCard .BackCard .cvc {
+  position: relative;
+  height: 100%;
+}
+.ContainerCard .BackCard .cvc p {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  font-size: 9px;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.08rem;
+}
+
+.CardForm {
+  width: 90%;
+  height: 54vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  color: hsl(278deg, 68%, 11%);
+}
+.CardForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.CardForm input {
+  padding: 12px;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: hsl(0deg, 0%, 100%);
+  min-width: 20px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.CardForm input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.CardForm input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.CardForm .GoupForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.CardForm .GoupForm .date {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.CardForm .GoupForm .date input {
+  width: 100%;
+}
+.CardForm .ButtonConfirm {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+.ConfirmedCard {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 54vh;
+  margin: 15% 0;
+  gap: 2rem;
+}
+.ConfirmedCard div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.ConfirmedCard div h2 {
+  color: hsl(278deg, 68%, 11%);
+  font-size: 1.5rem;
+}
+.ConfirmedCard div p {
+  color: hsl(279deg, 6%, 55%);
+  font-size: 1rem;
+}
+.ConfirmedCard button {
+  width: 100%;
+  padding: 0.735rem;
+  border-radius: 0.375rem;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../assets/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}/*# sourceMappingURL=app.css.map */
