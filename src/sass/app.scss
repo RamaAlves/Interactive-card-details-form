@@ -13,3 +13,19 @@
     justify-content: space-around;
     align-items: center;
 }
+@media (min-width:376px) and (max-width:992px){
+    .app{
+        background-repeat: repeat-x;
+    }
+}
+@media (min-width:992px){
+    .app{
+        width: 90vw;
+        background-image: url(../assets/images/bg-main-desktop.png);
+        flex-direction: row;
+        padding-left: 10vw;
+        gap:5%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

@@ -72,3 +72,61 @@
 
     }
 }
+
+@media (min-width:992px){
+    
+    .ContainerCard{
+        min-width: 523px;
+        height: 600px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .FrontCard{
+            position: static;
+            width: 80%;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap:20%;
+            padding: 5% 8%;
+            svg{
+                transform: scale(.9) translateX(0%) translateY(0%);
+                padding:0 ;
+            }
+            .numberCard{
+                margin-top: 10%;
+                letter-spacing: 2.5px;
+                font-size: 1.7rem;
+            }
+            .flex-name-date-card{
+                
+                display: flex;
+                font-size: .9rem;
+                letter-spacing: .1rem;
+               
+                
+                .date-card{
+                    display: flex;
+                }
+            }
+        }
+        .BackCard{
+            position: static;
+           
+            width: 80%;
+            height: 230px;
+            align-self: flex-end;
+            .cvc{
+                p{
+                    font-size: .9rem;
+                }
+    
+            }
+    
+    
+        }
+    }
+}

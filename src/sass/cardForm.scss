@@ -20,7 +20,8 @@
         padding: 12px;
         border-radius: .375rem;
         border-width: 1px;
-        border-color: $White;
+        border-style: solid;
+        border-color: $Light-grayish-violet;
         min-width: 20px;
         width: 100%;
         font-family: 'Space Grotesk', sans-serif;
@@ -34,6 +35,13 @@
         }
 
     }
+    small{
+        font-size: .7rem;
+        color:$Red;
+    }
+/*     .red{
+        color:$Red;
+    } */
     .GoupForm{
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -56,5 +64,18 @@
         letter-spacing: 1.5px;
         color:$White;
         background-color: $Very-dark-violet ;
+    }
+}
+
+@media (min-width:992px){
+
+    .CardForm{
+        min-width: 315px;
+        width: 25vw;
+        height: 40vh;
+        
+        .ButtonConfirm{
+            padding: .735rem;
+        }
     }
 }
