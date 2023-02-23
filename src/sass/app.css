@@ -253,6 +253,7 @@
   .app {
     width: 90vw;
     background-image: url(../assets/images/bg-main-desktop.png);
+    background-size: contain;
     flex-direction: row;
     padding-left: 10vw;
     gap: 5%;
