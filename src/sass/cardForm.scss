@@ -39,9 +39,6 @@
         font-size: .7rem;
         color:$Red;
     }
-/*     .red{
-        color:$Red;
-    } */
     .GoupForm{
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -58,6 +55,7 @@
         }
     }
     .ButtonConfirm{
+        cursor: pointer;
         padding: 1rem;
         border-radius: .375rem;
         font-size: 16px;
